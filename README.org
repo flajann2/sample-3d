@@ -56,8 +56,8 @@
     #+begin_src bash
     cmake . -G "Xcode"
     open Splat.xcodeproj
-    # Press Command + Enter
     #+end_src
+    Press Command + Enter
 
 *** For Debugging with GDB
 
