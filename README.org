@@ -1,4 +1,10 @@
 * Samples 3D -- OpenGL samples
+  This code was snagged from:
+  http://prideout.net/blog/?tag=volume-rendering#gauss
+  
+  And modified to get it working on my system. I do not support this code
+  as it is for educational purposes only. Feel free to do with it as you wish. I
+  will accept your pull requests, of course.
 
 ** Volume Splat Demo
 
@@ -12,9 +18,9 @@
 
    If you're on Ubuntu, don't bother with the web site; just type this:
 
-    #+begin_src bash
-    sudo apt-get install CMake
-    #+end_src
+   #+begin_src bash
+   sudo apt-get install CMake
+   #+end_src
 
 *** For Visual Studio
 
@@ -23,16 +29,17 @@
     cd build
     cmake .. -G "Visual Studio 10"
     Splat.sln
-    #Right-click "Splat" in Solution Explorer and make it your StartUp Project.
-    #Press F5
     #+end_src
+
+    Right-click "Splat" in Solution Explorer and make it your StartUp Project.
+    Press F5
 
     If you're using an older Visual Studio, just run "cmake" (no arguments) to
     see a list of options. For example, a 2005 project can be built like this:
 
     #+begin_src bash
     cmake .. -G "Visual Studio 8 2005"
-    #+end_bash
+    #+end_src
 
 *** Linux or Mac, from Command Line
 
@@ -65,4 +72,5 @@
 ** References
 
    Visible links
-   2. http://prideout.net/blog/?p=60
+   1. http://prideout.net/blog/?p=60
+   2. http://prideout.net/blog/?tag=volume-rendering#gauss 
