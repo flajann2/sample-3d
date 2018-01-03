@@ -4,53 +4,65 @@
 
    [2]http://prideout.net/blog/?p=60
 
-  Download and Install CMake
+   Download and Install CMake
 
    You can get it from here:
-
-    http://www.cmake.org/cmake/resources/software.html
+   
+   http://www.cmake.org/cmake/resources/software.html
 
    If you're on Ubuntu, don't bother with the web site; just type this:
 
-    > sudo apt-get install CMake
+    #+begin_src bash
+    sudo apt-get install CMake
+    #+end_src
 
-  For Visual Studio
+*** For Visual Studio
 
-    > mkdir build
-    > cd build
-    > cmake .. -G "Visual Studio 10"
-    > Splat.sln
-    > Right-click "Splat" in Solution Explorer and make it your StartUp Project.
-    > Press F5
+    #+begin_src bash
+    mkdir build
+    cd build
+    cmake .. -G "Visual Studio 10"
+    Splat.sln
+    #Right-click "Splat" in Solution Explorer and make it your StartUp Project.
+    #Press F5
+    #+end_src
 
-   If you're using an older Visual Studio, just run "cmake" (no arguments) to
-   see a list of options. For example, a 2005 project can be built like this:
+    If you're using an older Visual Studio, just run "cmake" (no arguments) to
+    see a list of options. For example, a 2005 project can be built like this:
 
-    > cmake .. -G "Visual Studio 8 2005"
+    #+begin_src bash
+    cmake .. -G "Visual Studio 8 2005"
+    #+end_bash
 
-  Linux or Mac, from Command Line
+*** Linux or Mac, from Command Line
 
-    > mkdir build
-    > cd build
-    > cmake ..
-    > make
-    > ./Splat
+    #+begin_src bash
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./Splat
+    #+end_src
 
-  Mac with Xcode
+*** Mac with Xcode
 
-    > cmake . -G "Xcode"
-    > open Splat.xcodeproj
-    > Press Command + Enter
+    #+begin_src bash
+    cmake . -G "Xcode"
+    open Splat.xcodeproj
+    # Press Command + Enter
+    #+end_src
 
-  For Debugging with GDB
+*** For Debugging with GDB
 
-    > mkdir build
-    > cd build
-    > cmake .. -DCMAKE_BUILD_TYPE=Debug
-    > make VERBOSE=1
-    > gdb Splat
+    #+begin_src bash
+    mkdir build
+    cd build
+    cmake .. -DCMAKE_BUILD_TYPE=Debug
+    make VERBOSE=1
+    gdb Splat
+    #+end_src
 
-References
+** References
 
    Visible links
    2. http://prideout.net/blog/?p=60
