@@ -1,0 +1,56 @@
+* Samples 3D -- OpenGL samples
+
+** Volume Splat Demo
+
+   [2]http://prideout.net/blog/?p=60
+
+  Download and Install CMake
+
+   You can get it from here:
+
+    http://www.cmake.org/cmake/resources/software.html
+
+   If you're on Ubuntu, don't bother with the web site; just type this:
+
+    > sudo apt-get install CMake
+
+  For Visual Studio
+
+    > mkdir build
+    > cd build
+    > cmake .. -G "Visual Studio 10"
+    > Splat.sln
+    > Right-click "Splat" in Solution Explorer and make it your StartUp Project.
+    > Press F5
+
+   If you're using an older Visual Studio, just run "cmake" (no arguments) to
+   see a list of options. For example, a 2005 project can be built like this:
+
+    > cmake .. -G "Visual Studio 8 2005"
+
+  Linux or Mac, from Command Line
+
+    > mkdir build
+    > cd build
+    > cmake ..
+    > make
+    > ./Splat
+
+  Mac with Xcode
+
+    > cmake . -G "Xcode"
+    > open Splat.xcodeproj
+    > Press Command + Enter
+
+  For Debugging with GDB
+
+    > mkdir build
+    > cd build
+    > cmake .. -DCMAKE_BUILD_TYPE=Debug
+    > make VERBOSE=1
+    > gdb Splat
+
+References
+
+   Visible links
+   2. http://prideout.net/blog/?p=60
